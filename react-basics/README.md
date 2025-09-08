@@ -6,21 +6,21 @@
 
 ### JSX
 
-### Props
+### Props done
 
-### State
+### State done
 
 ### Props drilling
 
 ### State lifiting
 
-### Children
+### Children done
 
 ### Basic styling
 
-### Event handling
+### Event handling done
 
-### Conditional Rendering
+### Conditional Rendering done
 
 ### List and keys
 

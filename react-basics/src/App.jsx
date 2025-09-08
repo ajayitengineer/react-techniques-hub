@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Child, FourthChild, SecondChild, ThirdChild } from "./Child";
+import Condition from "./Condition";
+import State from "./State";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const data = "hello this is props of child passed by parent";
+  const style = {
+    color: "red",
+    fontSize: "12px",
+  };
+  const handler = (value) => {
+    console.log(`this is called by child and child pass value: ${value}`);
+  };
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>this is main parent.</h1>
+      <Child data={data} />
+      <SecondChild>This is children of second child</SecondChild>
+      <ThirdChild style={style}>This is third child</ThirdChild>
+      <FourthChild title={2} />
+      <br />
+      <hr />
+      <State onClick={handler} />
+      <Condition />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
