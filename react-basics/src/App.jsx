@@ -2,6 +2,8 @@ import { Child, FourthChild, SecondChild, ThirdChild } from "./Child";
 import Condition from "./Condition";
 import Propsdrilling from "./Propsdrilling";
 import State from "./State";
+import Useffect from "./Useeffect";
+import UseRef from "./UseRef";
 
 function App() {
   const data = "hello this is props of child passed by parent";
@@ -25,6 +27,10 @@ function App() {
       <Condition />
       <hr></hr>
       <Propsdrilling />
+      <hr />
+      <UseRef />
+      <hr />
+      <Useffect />
     </>
   );
 }
