@@ -1,5 +1,6 @@
 import { Child, FourthChild, SecondChild, ThirdChild } from "./Child";
 import Condition from "./Condition";
+import Propsdrilling from "./Propsdrilling";
 import State from "./State";
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
       <hr />
       <State onClick={handler} />
       <Condition />
+      <hr></hr>
+      <Propsdrilling />
     </>
   );
 }

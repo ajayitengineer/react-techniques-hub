@@ -1,5 +1,4 @@
 // Conditional rendering
-import { CONNREFUSED } from "dns";
 import { useState } from "react";
 
 function Condition1() {
