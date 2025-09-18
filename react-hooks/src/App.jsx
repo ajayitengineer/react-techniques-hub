@@ -1,3 +1,7 @@
+import Notes6 from "./Notes6";
+import Notes7 from "./Notes7";
+import Reactmemo from "./Reactmemo";
+import Usecallback from "./Usecallback";
 import Usecontext from "./Usecontext";
 import Useeffect from "./Useeffect";
 import Usememo from "./Usememo";
@@ -7,8 +11,9 @@ import Usestate from "./Usestate";
 function App() {
   const style = {
     border: "1px solid black",
-    padding: "20px",
+    padding: "10px",
     textAlign: "center",
+    margin: "20px",
   };
   return (
     <section style={style}>
@@ -18,6 +23,10 @@ function App() {
       <Usememo />
       <Usereducer />
       <Usecontext />
+      <Notes6 />
+      <Reactmemo />
+      <Notes7 />
+      <Usecallback />
     </section>
   );
 }

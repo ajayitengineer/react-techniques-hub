@@ -7,16 +7,14 @@ const style = {
     textAlign: "center",
   },
   button: {
-    padding: "10px",
     backgroundColor: "black",
+    padding: "10px",
     color: "white",
-    margin: "10px",
-    borderRadius: "4px",
-    border: "none",
+    margin: "20px",
   },
 };
 
-const initialState = { count: 0 };
+const initialstate = { count: 0 };
 
 function reducer(state, action) {
   switch (action.type) {
@@ -27,7 +25,7 @@ function reducer(state, action) {
       return { count: state.count - 1 };
     }
     case "Reset": {
-      return initialState;
+      return initialstate;
     }
     default: {
       return state;
@@ -36,11 +34,11 @@ function reducer(state, action) {
 }
 
 function Usereducer() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialstate);
   return (
     <section style={style.section}>
-      <h1>This is an example of useReducer works in React js.</h1>
-      <h3>State value is:{state.count}</h3>
+      <h1>This is an example for understanding useReducer.</h1>
+      <p>Value of state is: {state.count}</p>
       <button
         style={style.button}
         onClick={() => dispatch({ type: "Increment" })}

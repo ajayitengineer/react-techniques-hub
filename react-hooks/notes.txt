@@ -1,0 +1,26 @@
+(Que.) → What are hooks in React?
+(Ans.) → Hooks are special functions in React that let you use state and other React features inside functional components without writing class components. They simplify state management, side effects, and code reusability.
+
+(Que.) → List all major hooks in React.
+(Ans.) → React provides several built-in hooks, but the 6 most widely used hooks are:
+
+useState – for managing state in functional components.
+
+useEffect – for handling side effects (like fetching data, timers, subscriptions).
+
+useContext – for consuming context values directly.
+
+useCallback – for memoizing callback functions to optimize performance.
+
+useReducer – for managing complex state logic (like Redux style).
+
+useMemo – for memoizing expensive calculations.
+
+(Que.) → How does React define hooks?
+(Ans.) → By convention, all hooks start with the word "use" (e.g., useState, useEffect).
+
+This naming convention helps React identify hook calls.
+
+When creating custom hooks, you must also follow the same convention (useSomething) so React can correctly detect them.
+
+
