@@ -1,12 +1,13 @@
 function Notes6() {
   return (
-    <section>
-      <h1>Notes before going deep into useCallback hook.</h1>
+    <section className="notes">
       <p>
-        As, we know if parent's state change then its rerender in that case all
-        associated children have to be rerender.
+        In React, when a parent component re-renders (due to state/prop change),
+        all of its child components also re-render by default. To avoid
+        unnecessary re-renders of child components (when their props haven’t
+        changed), we can wrap them with{" "}
+        <span className="highlight">React.memo.</span>
       </p>
-      <p>To avoid this scenerio we can use memo </p>
     </section>
   );
 }
